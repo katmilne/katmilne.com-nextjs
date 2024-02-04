@@ -6,18 +6,7 @@ import Link from 'next/link';
 const Home: React.FC = () => {
   return (
     <div className="font-[Sono] bg-white text-md">
-      <head>
-        <meta charSet="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>katmilne.com</title>
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
-        <link
-          href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Pangolin&family=VT323&family=Sono&display=swap"
-          rel="stylesheet"
-        />
-        <link rel="stylesheet" href="../styles/globals.css" />
-      </head>
+
 
       {/* NAVBAR */}
       <header className="bg-white h-28 shadow-custom text-xl">
