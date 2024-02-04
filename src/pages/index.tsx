@@ -1,10 +1,13 @@
 // pages/index.tsx
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
 import Navigation from '../components/Layout/Navigation';
 import Footer from '../components/Layout/Footer';
+
+
+
 
 const Home = () => {
   const router = useRouter();
@@ -20,7 +23,7 @@ const Home = () => {
       {/* MAIN CONTENT */}
       <section className="flex items-center justify-center w-1/2 mx-auto">
         <div className="flex flex-col items-center justify-center">
-          <Image src="/img/me.jpg" alt="Kat Milne" width={250} height={442} className="mt-20 m-10 shadow-custom rounded-md" />
+          <Image src="/img/me.jpg" alt="Kat Milne" width={250} height={442} priority={true} className=" mt-20 m-10 shadow-custom rounded-md" />
           <ul className="flex items-center justify-center space-x-10">
             <li className="transition duration-500 ease-in-out transform hover:scale-150">
               <a href="https://github.com/katmilne"><Image src="/img/github-thin.svg" alt="GitHub" width={36} height={36} /></a>
