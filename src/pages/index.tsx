@@ -51,7 +51,7 @@ const Home = () => {
                     autoStart: true,
                     wrapperClassName: 'text-2xl font-[VT323] tracking-wider', // Apply Tailwind CSS classes here
                     cursor: '|',
-                    cursorClassName: 'Typewriter__cursor text-2xl',
+                    cursorClassName: 'Typewriter__cursor text-xl',
                     delay: 'natural',
                 }}
             /> 

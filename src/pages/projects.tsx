@@ -2,15 +2,15 @@ import Navigation from '../components/Layout/Navigation';
 import Footer from '../components/Layout/Footer';
 import Typewriter from 'typewriter-effect'; 
 import Link from 'next/link';
-import Image from 'next/image';
-import project1img from "../../public/img/blobodoro.com.png"
-import githubimg from "../../public/img/github-thin.svg"
+import Image, { StaticImageData } from 'next/image';
+import project1img from '../../public/img/blobodoro.com.png'
+import githubimg from '../../public/img/github-thin.svg'
 
 interface FeaturedProjectsProps {
     type: string;
     title: string;
     summary: string;
-    img: string; 
+    img: string | StaticImageData; 
     link: string;
     github: string;
   }
@@ -51,7 +51,7 @@ const FeaturedProjects: React.FC<FeaturedProjectsProps> = ({
 interface ProjectProps {
     type: string;
     title: string;
-    img: string; 
+    img: string | StaticImageData; 
     link: string;
     github: string;
   }
