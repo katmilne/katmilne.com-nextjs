@@ -5,6 +5,7 @@ import Link from 'next/link';
 import { useRouter } from 'next/router';
 import Navigation from '../components/Layout/Navigation';
 import Footer from '../components/Layout/Footer';
+import Typewriter from 'typewriter-effect';
 
 
 
@@ -38,7 +39,22 @@ const Home = () => {
         </div>
 
         <div className="w-1/2">
-          <h1 className="font-semibold text-3xl font-[VT323] tracking-wider">Hi, I'm Kat.</h1>
+        <Typewriter 
+                onInit={(typewriter) => { 
+                    typewriter.typeString("Hi I'm Kat")
+                        .callFunction(() => {
+                            console.log('String typed out!');
+                        })
+                        .start(); 
+                }} 
+                options={{
+                    autoStart: true,
+                    wrapperClassName: 'text-2xl font-[VT323] tracking-wider', // Apply Tailwind CSS classes here
+                    cursor: '|',
+                    cursorClassName: 'Typewriter__cursor text-2xl',
+                    delay: 'natural',
+                }}
+            /> 
           <h1 className="mt-2 text-md">Full Stack Software Developer</h1>
           <p className="mt-7">I'm a recent graduate of the University of Birmingham with a BSc in Computer Science.</p>
           <p className="mt-5">
