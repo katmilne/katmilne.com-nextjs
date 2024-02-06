@@ -8,8 +8,6 @@ import Footer from '../components/Layout/Footer';
 import Typewriter from 'typewriter-effect';
 
 
-
-
 const Home = () => {
   const router = useRouter();
 
@@ -42,9 +40,6 @@ const Home = () => {
         <Typewriter 
                 onInit={(typewriter) => { 
                     typewriter.typeString("Hi I'm Kat")
-                        .callFunction(() => {
-                            console.log('String typed out!');
-                        })
                         .start(); 
                 }} 
                 options={{
