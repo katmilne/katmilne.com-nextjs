@@ -17,7 +17,3 @@
   }
 }
 
-.custom-cursor-container .Typewriter__cursor {
-  animation: blinkCursor 0.5s infinite;
-  color: gray; /* Set color to gray or any other color you prefer */
-}

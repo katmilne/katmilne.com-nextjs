@@ -15,13 +15,13 @@ const Navigation = () => {
 
     return (
         <header className="bg-white shadow-custom text-xl">
-            <nav className="font-[Inter] text-2xl font-bold flex items-center justify-between h-28">
+            <nav className="font-[Inter] text-2xl font-bold flex items-center justify-between h-28 w-full ">
                 <ul className="flex items-center w-2/3 justify-center">
                     <li className=""><Image src="/img/poppy3.png" alt="Poppy" width={100} height={100} className="p-2" /></li>
                     <h2 className="text-3xl font-[VT323] font-medium tracking-wider">katmilne.com</h2>
                 </ul>
                 {/* Render burger icon for small and medium screens */}
-                <div className="w-1/3 flex justify-center md:hidden">
+                <div className="flex justify-center md:hidden">
                     <Image src="/img/menu.svg" alt="Menu" width={30} height={30} onClick={() => setIsMenuOpen(!isMenuOpen)} className="cursor-pointer" />
                 </div>
                 {/* Render regular navigation links for larger screens */}

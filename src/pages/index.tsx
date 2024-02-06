@@ -20,23 +20,28 @@ const Home = () => {
       <Navigation />
 
       {/* MAIN CONTENT */}
-      <section className="flex items-center justify-center w-1/2 mx-auto">
-        <div className="flex flex-col items-center justify-center">
-          <Image src="/img/me.jpg" alt="Kat Milne" width={250} height={442} priority={true} className=" mt-20 m-10 shadow-custom rounded-md" />
-          <ul className="flex items-center justify-center space-x-10">
-            <li className="transition duration-500 ease-in-out transform hover:scale-150">
-              <a href="https://github.com/katmilne"><Image src="/img/github-thin.svg" alt="GitHub" width={36} height={36} /></a>
-            </li>
-            <li className="transition duration-500 ease-in-out transform hover:scale-150">
-              <a href="https://www.blobodoro.com/"><Image src="/img/Blob-icon2.png" alt="Blobodoro" width={58} height={58} /></a>
-            </li>
-            <li className="transition duration-500 ease-in-out transform hover:scale-150">
-              <a href="https://www.linkedin.com/in/katmilne/"><Image src="/img/linkedin-thin.svg" alt="LinkedIn" width={36} height={36}/></a>
-            </li>
-          </ul>
+      <section className="md:flex items-center justify-center w-full md:w-full md:m-6 mx-auto xl:w-1/2 xl:mx-auto">
+        <div className="flex flex-col md:flex-row-reverse items-center justify-center md:w-1/2 md:justify-start ">
+          <div className="flex flex-col items-center">
+            <Image src="/img/me.jpg" alt="Kat Milne" width={250} height={442} priority={true} className="xl:mt-20 m-10 shadow-custom rounded-md" />
+            <ul className="flex items-center justify-center space-x-10">
+              <li className="transition duration-500 ease-in-out transform hover:scale-150">
+                <a href="https://github.com/katmilne"><Image src="/img/github-thin.svg" alt="GitHub" width={36} height={36} /></a>
+              </li>
+              <li className="transition duration-500 ease-in-out transform hover:scale-150">
+                <a href="https://www.blobodoro.com/"><Image src="/img/Blob-icon2.png" alt="Blobodoro" width={58} height={58} /></a>
+              </li>
+              <li className="transition duration-500 ease-in-out transform hover:scale-150">
+                <a href="https://www.linkedin.com/in/katmilne/"><Image src="/img/linkedin-thin.svg" alt="LinkedIn" width={36} height={36}/></a>
+              </li>
+            </ul>
+          </div>
         </div>
 
-        <div className="w-1/2">
+
+
+      {/* BIO TEXT */}
+        <div className="m-4 md:w-1/2 md:mr-20 md:mb-10 xl:mt-12 ">
         <Typewriter 
                 onInit={(typewriter) => { 
                     typewriter.typeString("Hi I'm Kat")
@@ -60,7 +65,7 @@ const Home = () => {
       </section>
 
       {/* CALL TO ACTION BUTTON */}
-      <div className="flex justify-center align-middle mt-20 font-[VT323] text-3xl">
+      <div className="flex justify-center align-middle md:mt-20 font-[VT323] text-3xl">
         <Link href="/projects" passHref>
           <div className="flex outline outline-black outline-2 bg-rose-50 transition duration-300 hover:bg-rose-100 hover:shadow-custom">
             <h2 className="p-5 pr-2">CHECK OUT MY WORK</h2>
