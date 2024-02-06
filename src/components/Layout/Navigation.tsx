@@ -21,7 +21,7 @@ const Navigation = () => {
                     <h2 className="text-3xl font-[VT323] font-medium tracking-wider">katmilne.com</h2>
                 </ul>
                 {/* Render burger icon for small and medium screens */}
-                <div className="flex justify-center md:hidden">
+                <div className="flex justify-center md:hidden pr-8">
                     <Image src="/img/menu.svg" alt="Menu" width={30} height={30} onClick={() => setIsMenuOpen(!isMenuOpen)} className="cursor-pointer" />
                 </div>
                 {/* Render regular navigation links for larger screens */}
