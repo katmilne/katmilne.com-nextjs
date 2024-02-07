@@ -55,7 +55,7 @@ const CV = () => {
                     <h2 className='md:text-4xl text-2xl font-bold font-[sono] md:my-6 my-2'>About Me</h2>
                     <div className='lg:flex lg:flex-grow lg:my-2  '>
                         <div className='font-bold whitespace-nowrap md:mr-6'>Technical  Skills</div>
-                            <div className='grid grid-cols-3 md:grid-cols-6 gap-x-1 gap-y-1 text-rose-300 font-bold mt-2 md:mt-0'>
+                            <div className='grid grid-cols-3 md:grid-cols-6 gap-x-1 gap-y-1 xl:flex xl:justify-between w-full text-rose-300 font-bold mt-2 md:mt-0'>
                                 <div className='flex justify-center'>JavaScript</div>
                                 <div className='flex justify-center'>HTML</div>
                                 <div className='flex justify-center'>CSS</div>
