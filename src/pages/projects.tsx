@@ -24,24 +24,24 @@ const FeaturedProjects: React.FC<FeaturedProjectsProps> = ({
     }) => {
   
     return (
-        <article className='w-full flex items-center justify-between relative border-4 border-zinc-800 bg-white rounded-3xl  p-5 m-5'>
-            <div className='absolute top-1 -right-6 -z-10 w-[102%] h-[103%] rounded-[2rem] bg-zinc-800'/>
-            <Link href={link} target="_blank" className='w-1/2 cursor-pointer overflow-hidden rounded-lg'>
-                <Image src={img} alt={title} className="w-full h-auto"/>
+        <article className='w-full lg:flex lg:items-center lg:justify-between shadow-custom lg:shadow-none lg:relative border-4 border-zinc-800 bg-white rounded-3xl  lg:p-5 lg:m-5 mt-6'>
+            <div className='lg:absolute top-1 -right-6 -z-10 w-[102%] h-[103%] rounded-[2rem] bg-zinc-800'/>
+            <Link href={link} target="_blank" className='w-1/2 cursor-pointer rounded-lg'>
+                <Image src={img} alt={title} className="lg:w-full lg:h-auto rounded-3xl"/>
             </Link>
             
             
-            <div className='w-1/2 flex flex-col items-start justify-between pl-6'>
+            <div className='lg:w-1/2 flex flex-col items-start justify-between lg:pl-6 m-2'>
                 <span className='text-rose-300 font-medium text-xl'>{type}</span>
                 <Link href={link} target="_blank" className='hover:underline underline-offset-2'>
-                    <h2 className='my-2 w-full text-left text-4xl font-bold'>{title}</h2>
+                    <h2 className='my-2 w-full text-left text-3xl lg:text-4xl font-bold'>{title}</h2>
                 </Link>
-                <p className='my-2 font-medium'>{summary}</p>
-                <div className='mr-auto'>
-                <Link href={github} target="_blank" className="flex items-center justify-center mt-2">
-                    <Image src={githubimg}  width={40} height={40} alt={title} className="mb-2" />
-                    <span className="ml-4 mb-2 rounded-lg bg-zinc-600 text-white p-2 px-6 text-lg font-semibold hover:bg-rose-200 transition duration-500 ease-in-out">Visit Project</span>
-                </Link>
+                <p className='lg:my-2 font-medium '>{summary}</p>
+                <div className='mr-auto w-full lg:w-1/2'>
+                    <Link href={github} target="_blank" className="flex items-center justify-center mt-2 ">
+                        <Image src={githubimg}  width={40} height={40} alt={title} className="mb-2" />
+                        <span className="ml-4 mb-2 rounded-lg bg-zinc-600 text-white p-2 lg:px-6 text-lg font-semibold hover:bg-rose-200 transition duration-500 ease-in-out lg:text-nowrap">Visit Project</span>
+                    </Link>
                 </div>
             </div>
         </article>     
@@ -111,8 +111,9 @@ const Projects = () => {
                     }}
                 /> 
 
-                <section className='w-1/2 grid grid-cols-12 gap-20 mt-5 '>
-                    <div className='col-span-12'>
+                {/* Featured Project */}
+                <section className='lg:w-1/2 '>
+                    <div className=' m-4 lg:m-0 '>
                         <FeaturedProjects 
                             title="Blobodoro"
                             img={project1img}
@@ -123,44 +124,46 @@ const Projects = () => {
                         />
                     </div>
                 </section>
-                    <section className='grid grid-cols-12 w-1/2 justify-center mt-10'>
-                        <div className='col-span-6 row-span-4 ml-10 my-5'>
-                                <Project 
-                                    title="Blobodoro"
-                                    img={project1img}
-                                    link="https://www.blobodoro.com/"
-                                    github="https://github.com/blobodoro"
-                                    type="Featured Project"
-                                />
-                            </div>
-                            <div className='col-span-6 row-span-4 ml-10 my-5'>
-                                <Project 
-                                    title="Blobodoro"
-                                    img={project1img}
-                                    link="https://www.blobodoro.com/"
-                                    github="https://github.com/blobodoro"
-                                    type="Featured Project"
-                                />
-                            </div>
-                            <div className='col-span-6 row-span-4 ml-10 my-5'>
-                                <Project 
-                                    title="Blobodoro"
-                                    img={project1img}
-                                    link="https://www.blobodoro.com/"
-                                    github="https://github.com/blobodoro"
-                                    type="Featured Project"
-                                />
-                            </div>
-                            <div className='col-span-6 row-span-4 ml-10 my-5'>
-                                <Project 
-                                    title="Blobodoro"
-                                    img={project1img}
-                                    link="https://www.blobodoro.com/"
-                                    github="https://github.com/blobodoro"
-                                    type="Featured Project"
-                                />
-                            </div>
-                    </section>
+
+                {/* Grid of projects */}
+                <section className='xl:grid grid-cols-12 xl:w-1/2 justify-center xl:mt-10 lg:mx-[25%] lg:pl-6'>
+                    <div className='col-span-6 row-span-4 xl:ml-10 xl:my-5 m-4'>
+                            <Project 
+                                title="Blobodoro"
+                                img={project1img}
+                                link="https://www.blobodoro.com/"
+                                github="https://github.com/blobodoro"
+                                type="Featured Project"
+                            />
+                        </div>
+                        <div className='col-span-6 row-span-4 xl:ml-10 xl:my-5 m-4'>
+                            <Project 
+                                title="Blobodoro"
+                                img={project1img}
+                                link="https://www.blobodoro.com/"
+                                github="https://github.com/blobodoro"
+                                type="Featured Project"
+                            />
+                        </div>
+                        <div className='col-span-6 row-span-4 xl:ml-10 xl:my-5 m-4'>
+                            <Project 
+                                title="Blobodoro"
+                                img={project1img}
+                                link="https://www.blobodoro.com/"
+                                github="https://github.com/blobodoro"
+                                type="Featured Project"
+                            />
+                        </div>
+                        <div className='col-span-6 row-span-4 xl:ml-10 xl:my-5 m-4'>
+                            <Project 
+                                title="Blobodoro"
+                                img={project1img}
+                                link="https://www.blobodoro.com/"
+                                github="https://github.com/blobodoro"
+                                type="Featured Project"
+                            />
+                        </div>
+                </section>
                         
 
                 
