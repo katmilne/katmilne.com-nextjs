@@ -28,15 +28,19 @@ The CV page serves as an online resume, detailing my education background, techn
 To run this website locally, follow these steps:
 
 1. Clone the repository:
+```bash
   git clone <repository_url>
-2. Navigate to the project directory:
+3. Navigate to the project directory:
+  ```bash
   cd <project_directory>
-3. Install dependencies:
-   npm install
-4. Start the development server:
+4. Install dependencies:
+  ```bash
+  npm install
+5. Start the development server:
+  ```bash
   npm run dev
 
-5. Open your browser and visit `http://localhost:3000` to view the website.
+6. Open your browser and visit `http://localhost:3000` to view the website.
 
 ## Deployment
 
