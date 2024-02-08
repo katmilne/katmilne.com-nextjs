@@ -7,7 +7,6 @@ This repository contains the codebase for my personal website built using Next.j
 ### Homepage
 
 The homepage provides an introduction to who I am and showcases some of my skills and interests. It includes a brief bio, a section highlighting my skills, and a call-to-action button to explore my projects.
-![image](https://github.com/katmilne/katmilne.com-nextjs/assets/93844865/dd00d156-f1dd-4f4f-b815-f20ff1635647)
 
 
 ### Projects
