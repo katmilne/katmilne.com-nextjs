@@ -44,8 +44,16 @@ This website is live at [katmilne.com](https://katmilne.com) and hosted by Verce
 
 ## License
 
+This project was designed and coded by Katherine Milne (me). You are free to use the code to create and customize your own website. However, please note that without a specific license, there are no explicit permissions or restrictions on how the code can be used.
 
-This project was designed and coded by Katherine Milne (me). You are free to use the code to create and customize your own website. However, please note that without a specific license, there are no explicit permissions or restrictions on how the code can be used. It is recommended to consult with a legal professional if you have any questions about the usage of this code.
+### Images
+
+Please note that the images used in this project, including my personal photo and the drawing I created, are proprietary and not free to use for others. These images are solely intended for use within this project and should not be redistributed or used in other projects without my explicit permission.
+
+If you wish to use similar images in your own projects, please create your own or obtain proper licensing for the images from the respective owners.
+
+It is recommended to consult with a legal professional if you have any questions about the usage of this code.
+
 
 
 ---
