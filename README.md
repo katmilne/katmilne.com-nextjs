@@ -30,15 +30,19 @@ To run this website locally, follow these steps:
 1. Clone the repository:
 ```bash
   git clone <repository_url>
+```
 3. Navigate to the project directory:
   ```bash
   cd <project_directory>
+```
 4. Install dependencies:
   ```bash
   npm install
+```
 5. Start the development server:
   ```bash
   npm run dev
+```
 
 6. Open your browser and visit `http://localhost:3000` to view the website.
 
