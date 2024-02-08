@@ -56,7 +56,7 @@ This project was designed and coded by Katherine Milne (me). You are free to use
 
 ### Images
 
-Please note that the images used in this project, including my personal photo and the drawing I created, are proprietary and not free to use for others. These images are solely intended for use within this project and should not be redistributed or used in other projects without my explicit permission.
+Please note that the images used in this project, including my personal photo and the drawings I created, are proprietary and not free to use for others. These images are solely intended for use within this project and should not be redistributed or used in other projects without my explicit permission.
 
 If you wish to use similar images in your own projects, please create your own or obtain proper licensing for the images from the respective owners.
 
