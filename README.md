@@ -1,6 +1,6 @@
 # My Website
 
-This repository contains the codebase for my personal website built using Next.js and Tailwind CSS. The website consists of three main pages: Homepage, Projects, and CV.
+This repository contains the codebase for my responsive personal website built using Next.js and Tailwind CSS. The website consists of three main pages: Homepage, Projects, and CV.
 
 ## Pages
 
