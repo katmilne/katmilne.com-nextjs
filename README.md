@@ -12,13 +12,13 @@ The homepage provides an introduction to who I am and showcases some of my skill
 ### Projects
 
 The projects page displays a featured project, Blobodoro, along with a grid of other projects. Each project card includes an image, title, summary, and links to the project and its GitHub repository.
-![image](https://github.com/katmilne/katmilne.com-nextjs/assets/93844865/170c223f-cfcc-48b7-859b-1b4e577225f2)
+
 
 
 ### CV
 
 The CV page serves as an online resume, detailing my education background, technical skills, and relevant projects I've worked on. It also provides contact information and links to my GitHub and LinkedIn profiles.
-![image](https://github.com/katmilne/katmilne.com-nextjs/assets/93844865/aa1b3e78-05cb-45d5-b5b1-7fa85997302b)
+
 
 
 ## Technologies Used
