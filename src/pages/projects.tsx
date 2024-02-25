@@ -117,7 +117,7 @@ const Projects = () => {
                         <FeaturedProjects 
                             title="Blobodoro"
                             img={project1img}
-                            summary="Productive studying with a cute pixel twist. Created using react native, tailwind css, react router, jj djfuhwuh jshjshsu shjshsu shushsjsn suwhjuwwjsn sjshu"
+                            summary="Productive studying with a cute pixel twist. Created using react native next.js, tailwind css and react router."
                             link="https://www.blobodoro.com/"
                             github="https://github.com/blobodoro"
                             type="Featured Project"
