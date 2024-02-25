@@ -124,9 +124,9 @@ const Projects = () => {
                         />
                     </div>
                 </section>
-
+                    <div className='p-16 flex justify-center font-[VT323] tracking-wider text-3xl text-rose-300'> More Projects To Come... </div>
                 {/* Grid of projects */}
-                <section className='xl:grid grid-cols-12 xl:w-1/2 justify-center xl:mt-10 lg:mx-[25%] lg:pl-6'>
+                {/* <section className='xl:grid grid-cols-12 xl:w-1/2 justify-center xl:mt-10 lg:mx-[25%] lg:pl-6'>
                     <div className='col-span-6 row-span-4 xl:ml-10 xl:my-5 m-4'>
                             <Project 
                                 title="Blobodoro"
@@ -163,7 +163,7 @@ const Projects = () => {
                                 type="Featured Project"
                             />
                         </div>
-                </section>
+                </section> */}
                         
 
                 
