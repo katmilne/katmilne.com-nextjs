@@ -23,7 +23,7 @@ const Home = () => {
       <section className="md:flex items-center justify-center w-full md:w-full md:m-6 mx-auto xl:w-1/2 xl:mx-auto">
         <div className="flex flex-col md:flex-row-reverse items-center justify-center md:w-1/2 md:justify-start ">
           <div className="flex flex-col items-center">
-              <Image src="/img/meandella.jpg" alt="Kat Milne and Ella" width={250} height={442} className="xl:mt-20 m-10 shadow-custom rounded-md" />
+              <Image src="/img/meandella.png" alt="Kat Milne and Ella" width={250} height={442} className="xl:mt-20 m-10 shadow-custom rounded-md" />
             <ul className="flex items-center justify-center space-x-10">
               <li className="transition duration-500 ease-in-out transform hover:scale-150">
                 <a href="https://github.com/katmilne"><Image src="/img/github-thin.svg" alt="GitHub" width={36} height={36} /></a>
