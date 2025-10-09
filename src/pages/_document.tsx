@@ -11,7 +11,7 @@ class MyDocument extends Document {
             href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Pangolin&family=VT323&family=Sono&display=swap"
             rel="stylesheet"
           />
-          <link rel="stylesheet" href="../styles/globals.css" />
+            {/* Global styles are imported in _app.tsx, so this is not needed */}
         </Head>
         <body>
           <Main />

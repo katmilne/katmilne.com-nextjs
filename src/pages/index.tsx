@@ -23,14 +23,14 @@ const Home = () => {
       <section className="md:flex items-center justify-center w-full md:w-full md:m-6 mx-auto xl:w-1/2 xl:mx-auto">
         <div className="flex flex-col md:flex-row-reverse items-center justify-center md:w-1/2 md:justify-start ">
           <div className="flex flex-col items-center">
-            <Image src="/img/me.jpg" alt="Kat Milne" width={250} height={442} priority={true} className="xl:mt-20 m-10 shadow-custom rounded-md" />
+            <Image src="" alt="Kat Milne" width={250} height={442} priority={true} className="xl:mt-20 m-10 shadow-custom rounded-md" />
             <ul className="flex items-center justify-center space-x-10">
               <li className="transition duration-500 ease-in-out transform hover:scale-150">
                 <a href="https://github.com/katmilne"><Image src="/img/github-thin.svg" alt="GitHub" width={36} height={36} /></a>
               </li>
-              <li className="transition duration-500 ease-in-out transform hover:scale-150">
+              {/* <li className="transition duration-500 ease-in-out transform hover:scale-150">
                 <a href="https://www.blobodoro.com/"><Image src="/img/Blob-icon2.png" alt="Blobodoro" width={58} height={58} /></a>
-              </li>
+              </li> */}
               <li className="transition duration-500 ease-in-out transform hover:scale-150">
                 <a href="https://www.linkedin.com/in/katmilne/"><Image src="/img/linkedin-thin.svg" alt="LinkedIn" width={36} height={36}/></a>
               </li>
@@ -55,12 +55,12 @@ const Home = () => {
                     delay: 'natural',
                 }}
             /> 
-          <h1 className="mt-2 text-md">Full Stack Software Developer</h1>
-          <p className="mt-7">I'm a recent graduate of the University of Birmingham with a BSc in Computer Science.</p>
+          <h1 className="mt-2 text-md">Full Stack Software Developer, UX/UI</h1>
+          <p className="mt-7">I’m a Computer Science graduate from the University of Birmingham, now based in the U.S. with a passion for creativity and learning</p>
           <p className="mt-5">
-            While I'm not coding cute things or doodling, I love to spend time with all types of animals, from fostering cats to walking my dogs.
+            When I’m not coding or sketching ideas for new projects, you'll find me fostering cats, making pottery or learning mandarin.
           </p>
-          <p className="mt-7 font-bold">Skills: html css tailwindcss js c# git react next.js node react-native </p>
+          <p className="mt-7 font-bold">Skills: html, css, tailwindcss, js, SQL, git, react, next.js, node, figma </p>
         </div>
       </section>
 

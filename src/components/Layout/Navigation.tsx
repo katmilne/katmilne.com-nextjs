@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { useRouter } from 'next/router';
 import Image from 'next/image'; 
 
+
 const Navigation = () => {
     const router = useRouter();
     const [isMenuOpen, setIsMenuOpen] = useState(false); // Define the state variable and its setter function
