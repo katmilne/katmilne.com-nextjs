@@ -36,10 +36,10 @@ const Resume = () => {
                             <Image src="/img/mail.svg" alt="Mail" width={35} height={35} className="md:mx-1"/>
                             <h4 className='pt-1 mr-2 hidden md:block md:text-sm lg:text-base'>katmilne39@gmail.com</h4>
                         </Link>
-                        <Link className="flex mdp-2 md:mx-2 m-2" href="https://github.com/katmilne">
+                        {/* <Link className="flex mdp-2 md:mx-2 m-2" href="https://github.com/katmilne">
                             <Image src="/img/github-thin.svg" alt="Github" width={30} height={30} className="md:mx-1"/>
                             <h4 className='pt-1 mr-2 hidden md:block md:text-sm lg:text-base'>katmilne</h4>
-                        </Link>
+                        </Link> */}
                         <Link className="flex mdp-2 md:mx-2 m-2 mr-8" href="https://www.linkedin.com/in/katmilne/">
                             <Image src="/img/linkedin-thin.svg" alt="Linked In" width={30} height={30} className="md:mx-1"/>
                             <h4 className='pt-1 hidden md:block md:text-sm lg:text-base'>katmilne</h4>

@@ -155,9 +155,8 @@ const Projects = () => {
                             title="Blobodoro"
                             summary="Pomodoro timer app with collectable fish. Designed complete UI/UX experience in Figma, featuring customizable timers, focus sessions, and motivational fish collection."
                             img={blobodoroImg}
-                            link=""
+                            link="https://next-blobodoro-1zvbraj8f-katmilnes-projects.vercel.app/"
                             type="Design Project"
-                            showButton={false}
                             detailsLink="/blobodoro"
                         />
                         <Project 

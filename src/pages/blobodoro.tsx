@@ -187,6 +187,13 @@ const Blobodoro = () => {
                         <p className='text-lg mb-6'>
                             This is a conceptual design project created in Figma, exploring gamification in productivity apps.
                         </p>
+                        <Link 
+                            href="https://next-blobodoro-1zvbraj8f-katmilnes-projects.vercel.app/" 
+                            target="_blank"
+                            className='inline-flex items-center gap-2 px-8 py-4 bg-white border-4 border-zinc-800 rounded-lg hover:bg-gray-50 hover:shadow-custom transition duration-300 text-xl font-[VT323]'
+                        >
+                            Visit Site →
+                        </Link>
                     </div>
                 </section>
             </main>
