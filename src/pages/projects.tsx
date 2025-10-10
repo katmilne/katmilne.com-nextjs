@@ -143,12 +143,9 @@ const Projects = () => {
                         {/* Add more projects here */}
                     </div>
                 </section>
-                
-                        
-
-                
-                
-                
+                <section className='w-full max-w-6xl px-4 mt-3 mb-3 text-3xl font-[VT323] tracking-wider text-center text-rose-200'>
+                    More projects coming soon...
+                </section>
             </main>
             <Footer />
         </>   
