@@ -62,7 +62,7 @@ const Home = () => {
           <h1 className="mt-2 text-md">Full Stack Software Developer, UX/UI</h1>
           <p className="mt-7">I’m a Computer Science graduate from the University of Birmingham, now based in the U.S. with a passion for creativity and learning.</p>
           <p className="mt-5">
-            When I’m not coding or sketching ideas for new projects, you'll find me fostering cats, making pottery or learning mandarin.
+            When I’m not coding or sketching ideas for new projects, you'll find me fostering cats, making pottery or studying Mandarin.
           </p>
           <p className="mt-7 font-bold">Skills: html, css, tailwindcss, js, SQL, git, react, next.js, node, figma </p>
         </div>
