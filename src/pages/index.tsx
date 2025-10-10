@@ -36,7 +36,7 @@ const Home = () => {
                 <a href="https://www.linkedin.com/in/katmilne/"><Image src="/img/linkedin-thin.svg" alt="LinkedIn" width={36} height={36}/></a>
               </li>
               <li className="transition duration-500 ease-in-out transform hover:scale-150">
-                <Image src="/img/blob-icon.png" alt="blob fish drawing" width={50} height={50} />
+                <Image src="/img/Blob-icon.png" alt="blob fish drawing" width={50} height={50} />
               </li>
             </ul>
           </div>
