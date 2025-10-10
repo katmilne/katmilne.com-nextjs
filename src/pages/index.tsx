@@ -25,14 +25,18 @@ const Home = () => {
           <div className="flex flex-col items-center">
               <Image src="/img/meandella.png" alt="Kat Milne and Ella" width={250} height={442} className="xl:mt-20 m-10 shadow-custom rounded-md" />
             <ul className="flex items-center justify-center space-x-10">
-              {/* <li className="transition duration-500 ease-in-out transform hover:scale-150">
-                <a href="https://github.com/katmilne"><Image src="/img/github-thin.svg" alt="GitHub" width={36} height={36} /></a>
-              </li> */}
+              <li className="transition duration-500 ease-in-out transform hover:scale-150">
+                <Image src="/img/poppy2.png" alt="dog drawing" width={50} height={50} />
+              </li>
+
               {/* <li className="transition duration-500 ease-in-out transform hover:scale-150">
                 <a href="https://www.blobodoro.com/"><Image src="/img/Blob-icon2.png" alt="Blobodoro" width={58} height={58} /></a>
               </li> */}
               <li className="transition duration-500 ease-in-out transform hover:scale-150">
                 <a href="https://www.linkedin.com/in/katmilne/"><Image src="/img/linkedin-thin.svg" alt="LinkedIn" width={36} height={36}/></a>
+              </li>
+              <li className="transition duration-500 ease-in-out transform hover:scale-150">
+                <Image src="/img/blob-icon.png" alt="blob fish drawing" width={50} height={50} />
               </li>
             </ul>
           </div>

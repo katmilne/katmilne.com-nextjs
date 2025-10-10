@@ -4,7 +4,7 @@ import Typewriter from 'typewriter-effect';
 import Image from 'next/image';
 import Link from 'next/link';
 
-const CV = () => {
+const Resume = () => {
 
     return (
         <>
@@ -296,4 +296,4 @@ const CV = () => {
     );
 
 }
-export default CV;
+export default Resume;

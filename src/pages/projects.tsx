@@ -6,6 +6,8 @@ import Image, { StaticImageData } from 'next/image';
 import katmilnedotcom from '../../public/img/katmilne-website.png'
 import pokemongoSearchStringImg from '../../public/img/pokemongo-searchstring.png'
 import marketBellImg from '../../public/img/market-bell.png'
+import swapparelImg from '../../public/img/swapparel.png'
+import blobodoroImg from '../../public/img/blobodoro.com.png'
 
 interface FeaturedProjectsProps {
     type: string;
@@ -55,6 +57,9 @@ interface ProjectProps {
     summary?: string;
     img: string | StaticImageData; 
     link: string;
+    showButton?: boolean;
+    buttonText?: string;
+    detailsLink?: string;
   }
 const Project: React.FC<ProjectProps> = ({
     type,
@@ -62,29 +67,34 @@ const Project: React.FC<ProjectProps> = ({
     summary,
     img,
     link,
+    showButton = true,
+    buttonText = "Live Site",
+    detailsLink,
     }) => {
 
     return (
         <article className='w-full flex items-center justify-between shadow-custom lg:shadow-none relative border-4 border-zinc-800 bg-white rounded-3xl p-5'>
             <div className='absolute top-1 -right-3 -z-10 w-[102%] h-[103%] rounded-[2rem] bg-zinc-800'/>
             
-            <Link href={link} target="_blank" className='w-1/2 cursor-pointer rounded-lg'>
+            <Link href={detailsLink || link} target={detailsLink ? undefined : "_blank"} className='w-1/2 cursor-pointer rounded-lg'>
                 <Image src={img} alt={title} className="w-full h-auto "/>
             </Link>
             
             <div className='w-1/2 flex flex-col items-start justify-between pl-6'>
                 <span className='text-rose-300 font-medium text-xl'>{type}</span>
-                <Link href={link} target="_blank" className='hover:underline underline-offset-2'>
+                <Link href={detailsLink || link} target={detailsLink ? undefined : "_blank"} className='hover:underline underline-offset-2'>
                     <h2 className='my-2 w-full text-left text-2xl font-bold'>{title}</h2>
                 </Link>
                 {summary && (
                     <p className='my-2 font-medium text-xs'>{summary}</p>
                 )}
-                <div className='mt-2'>
-                    <Link href={link} target="_blank" className='flex items-center gap-2 px-4 py-2 bg-rose-50 border-2 border-zinc-800 hover:bg-rose-100 hover:shadow-custom transition duration-300'>
-                        <span className="text-md font-[VT323]">Live Site</span>
-                    </Link>
-                </div>
+                {showButton && (
+                    <div className='mt-2'>
+                        <Link href={link} target="_blank" className='flex items-center gap-2 px-4 py-2 bg-rose-50 border-2 border-zinc-800 hover:bg-rose-100 hover:shadow-custom transition duration-300'>
+                            <span className="text-md font-[VT323]">{buttonText}</span>
+                        </Link>
+                    </div>
+                )}
             </div>
         </article> 
     )
@@ -127,11 +137,28 @@ const Projects = () => {
                 <section className='w-full max-w-6xl px-4 mt-10 mb-10'>
                     <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6'>
                         <Project 
+                            title="Swapparel"
+                            summary="Full-stack sustainable fashion platform enabling clothing swaps. University group project covering conceptualization, market research, UX/UI design in Figma, development, and CI/CD deployment."
+                            img={swapparelImg}
+                            link="https://www.figma.com/design/o1ea986MMq4DvGzcQa2MKW/swapparel-website"
+                            type="University Group Project"
+                            buttonText="Figma Design"
+                        />
+                        <Project 
                             title="Pokémon Go Search String Builder"
                             summary="A web tool for generating complex Pokémon GO search filters. Creates advanced search queries to efficiently manage and filter through large Pokémon collections in-game."
                             img={pokemongoSearchStringImg}
                             link="https://www.pokestring.com/"
                             type="Web App"
+                        />
+                        <Project 
+                            title="Blobodoro"
+                            summary="Pomodoro timer app with collectable fish. Designed complete UI/UX experience in Figma, featuring customizable timers, focus sessions, and motivational fish collection."
+                            img={blobodoroImg}
+                            link=""
+                            type="Design Project"
+                            showButton={false}
+                            detailsLink="/blobodoro"
                         />
                         <Project 
                             title="Personal Portfolio Website"
