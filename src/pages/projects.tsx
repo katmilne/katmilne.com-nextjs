@@ -13,6 +13,7 @@ interface FeaturedProjectsProps {
     summary: string;
     img: string | StaticImageData; 
     link: string;
+    detailsLink?: string;
   }
 const FeaturedProjects: React.FC<FeaturedProjectsProps> = ({
     type,
@@ -20,19 +21,20 @@ const FeaturedProjects: React.FC<FeaturedProjectsProps> = ({
     summary,
     img,
     link,
+    detailsLink,
     }) => {
   
     return (
         <article className='w-full lg:flex lg:items-center lg:justify-between shadow-custom lg:shadow-none lg:relative border-4 border-zinc-800 bg-white rounded-3xl  lg:p-5 lg:m-5 mt-6'>
             <div className='lg:absolute top-1 -right-6 -z-10 w-[102%] h-[103%] rounded-[2rem] bg-zinc-800'/>
-            <Link href={link} target="_blank" className='w-1/2 cursor-pointer'>
+            <Link href={detailsLink || link} className='w-1/2 cursor-pointer'>
                 <Image src={img} alt={title} className="lg:w-full lg:h-auto "/>
             </Link>
             
             
             <div className='lg:w-1/2 flex flex-col items-start justify-between lg:pl-6 m-2'>
                 <span className='text-rose-300 font-medium text-xl'>{type}</span>
-                <Link href={link} target="_blank" className='hover:underline underline-offset-2'>
+                <Link href={detailsLink || link} className='hover:underline underline-offset-2'>
                     <h2 className='my-2 w-full text-left text-3xl lg:text-4xl font-bold'>{title}</h2>
                 </Link>
                 <p className='lg:my-2 font-medium '>{summary}</p>
@@ -115,6 +117,7 @@ const Projects = () => {
                             img={marketBellImg}
                             summary="Worldwide market exchange open/close time tracker all in one app, with live notifications - never miss a trade opportunity. Stay in sync across time zones with real-time updates on your iPhone."
                             link="https://magenta-stack-096828.framer.app/"
+                            detailsLink="/market-bell"
                             type="In Production - iOS App"
                         />
                     </div>
