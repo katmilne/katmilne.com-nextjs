@@ -30,7 +30,7 @@ const Navigation = () => {
                     <ul className="flex lg:flex-row w-full mx-auto justify-center items-center gap-2">
                         <li><a className={`hover:text-rose-100 mx-8 transition duration-300 cursor-pointer ${isActive('/') ? 'text-zinc-400' : ''}`} onClick={() => handleNavigation('/')}>Home</a></li>
                         <li><a className={`hover:text-rose-100 mx-8 transition duration-300 cursor-pointer ${isActive('/projects') ? 'text-zinc-400' : ''}`} onClick={() => handleNavigation('/projects')}>Projects</a></li>
-                        <li><a className={`hover:text-rose-100 mx-8 transition duration-300 cursor-pointer ${isActive('/cv') ? 'text-zinc-400' : ''}`} onClick={() => handleNavigation('/cv')}>CV</a></li>
+                        <li><a className={`hover:text-rose-100 mx-8 transition duration-300 cursor-pointer ${isActive('/cv') ? 'text-zinc-400' : ''}`} onClick={() => handleNavigation('/cv')}>Resume</a></li>
                     </ul>
                 </div>
                 {/* Render burger menu for small and medium screens */}
@@ -39,7 +39,7 @@ const Navigation = () => {
                         <ul className="flex flex-col w-full mx-auto justify-center items-center gap-2">
                             <li><a className={`hover:text-rose-100 mx-8 transition duration-300 cursor-pointer text-sm ${isActive('/') ? 'text-zinc-400' : ''}`} onClick={() => handleNavigation('/')}>Home</a></li>
                             <li><a className={`hover:text-rose-100 mx-8 transition duration-300 cursor-pointer text-sm ${isActive('/projects') ? 'text-zinc-400' : ''}`} onClick={() => handleNavigation('/projects')}>Projects</a></li>
-                            <li><a className={`hover:text-rose-100 mx-8 transition duration-300 cursor-pointer text-sm ${isActive('/cv') ? 'text-zinc-400' : ''}`} onClick={() => handleNavigation('/cv')}>CV</a></li>
+                            <li><a className={`hover:text-rose-100 mx-8 transition duration-300 cursor-pointer text-sm ${isActive('/cv') ? 'text-zinc-400' : ''}`} onClick={() => handleNavigation('/cv')}>Resume</a></li>
                         </ul>
                     </div>
                 )}

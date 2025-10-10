@@ -3,8 +3,9 @@ import Footer from '../components/Layout/Footer';
 import Typewriter from 'typewriter-effect'; 
 import Link from 'next/link';
 import Image, { StaticImageData } from 'next/image';
-import project1img from '../../public/img/blobodoro.com.png'
-import githubimg from '../../public/img/github-thin.svg'
+import katmilnedotcom from '../../public/img/katmilne-website.png'
+import pokemongoSearchStringImg from '../../public/img/pokemongo-searchstring.png'
+import marketBellImg from '../../public/img/market-bell.png'
 
 interface FeaturedProjectsProps {
     type: string;
@@ -12,7 +13,6 @@ interface FeaturedProjectsProps {
     summary: string;
     img: string | StaticImageData; 
     link: string;
-    github: string;
   }
 const FeaturedProjects: React.FC<FeaturedProjectsProps> = ({
     type,
@@ -20,14 +20,13 @@ const FeaturedProjects: React.FC<FeaturedProjectsProps> = ({
     summary,
     img,
     link,
-    github,
     }) => {
   
     return (
         <article className='w-full lg:flex lg:items-center lg:justify-between shadow-custom lg:shadow-none lg:relative border-4 border-zinc-800 bg-white rounded-3xl  lg:p-5 lg:m-5 mt-6'>
             <div className='lg:absolute top-1 -right-6 -z-10 w-[102%] h-[103%] rounded-[2rem] bg-zinc-800'/>
-            <Link href={link} target="_blank" className='w-1/2 cursor-pointer rounded-lg'>
-                <Image src={img} alt={title} className="lg:w-full lg:h-auto rounded-3xl"/>
+            <Link href={link} target="_blank" className='w-1/2 cursor-pointer'>
+                <Image src={img} alt={title} className="lg:w-full lg:h-auto "/>
             </Link>
             
             
@@ -37,10 +36,10 @@ const FeaturedProjects: React.FC<FeaturedProjectsProps> = ({
                     <h2 className='my-2 w-full text-left text-3xl lg:text-4xl font-bold'>{title}</h2>
                 </Link>
                 <p className='lg:my-2 font-medium '>{summary}</p>
-                <div className='mr-auto w-full lg:w-1/2'>
-                    <Link href={github} target="_blank" className="flex items-center justify-center mt-2 ">
-                        <Image src={githubimg}  width={40} height={40} alt={title} className="mb-2" />
-                        <span className="ml-4 mb-2 rounded-lg bg-zinc-600 text-white p-2 lg:px-6 text-lg font-semibold hover:bg-rose-200 transition duration-500 ease-in-out lg:text-nowrap">Visit Project</span>
+                <div className='mt-4'>
+                    <p className='text-sm text-gray-600 mb-3'>Join the waitlist, get notified on progress, and get first access as a beta tester</p>
+                    <Link href={link} target="_blank" className='inline-flex items-center gap-2 px-6 py-3 bg-rose-50 border-2 border-zinc-800 hover:bg-rose-100 hover:shadow-custom transition duration-300'>
+                        <span className="text-md font-[VT323]">Join Waitlist</span>
                     </Link>
                 </div>
             </div>
@@ -51,42 +50,39 @@ const FeaturedProjects: React.FC<FeaturedProjectsProps> = ({
 interface ProjectProps {
     type: string;
     title: string;
+    summary?: string;
     img: string | StaticImageData; 
     link: string;
-    github: string;
   }
 const Project: React.FC<ProjectProps> = ({
     type,
     title,
+    summary,
     img,
     link,
-    github,
     }) => {
 
     return (
-        <article className='w-full h-80 flex flex-col items-center justify-between border border-zinc-400 shadow-custom bg-white rounded-3xl p-5'>
-            {/* <div className='absolute top-1 -right-3 -z-10 w-[102%] h-[102%] rounded-[2rem] bg-zinc-800 hover:bg-zinc-400'/> */}
-            <Link href={link} target="_blank" className='w-full cursor-pointer overflow-hidden rounded-lg'>
-                <Image src={img} alt={title} className=" h-auto mx-auto overflow-hidden"/>
+        <article className='w-full flex items-center justify-between shadow-custom lg:shadow-none relative border-4 border-zinc-800 bg-white rounded-3xl p-5'>
+            <div className='absolute top-1 -right-3 -z-10 w-[102%] h-[103%] rounded-[2rem] bg-zinc-800'/>
+            
+            <Link href={link} target="_blank" className='w-1/2 cursor-pointer rounded-lg'>
+                <Image src={img} alt={title} className="w-full h-auto "/>
             </Link>
             
-            <div className='w-full flex flex-col mt-2 '>
-                
-                <span className='text-rose-300 font-medium text-md'>{type}</span>
-                <Link href={link} target="_blank" className='hover:underline underline-offset-2 '>
-                    <h2 className='my-0.5 w-full text-left text-lg font-bold'>{title}</h2>
+            <div className='w-1/2 flex flex-col items-start justify-between pl-6'>
+                <span className='text-rose-300 font-medium text-xl'>{type}</span>
+                <Link href={link} target="_blank" className='hover:underline underline-offset-2'>
+                    <h2 className='my-2 w-full text-left text-2xl font-bold'>{title}</h2>
                 </Link>
-
-                <div className=' flex justify-between mt-2 mx-5'>
-                        <Image src={githubimg}  width={20} height={20} alt={title} className="my-0.5" />
-                    <div>
-                        <Link href={github} target="_blank">
-                            <span className="text-md text-zinc-800 font-bold">
-                                Visit</span>
-                        </Link>
-                    </div>
+                {summary && (
+                    <p className='my-2 font-medium text-xs'>{summary}</p>
+                )}
+                <div className='mt-2'>
+                    <Link href={link} target="_blank" className='flex items-center gap-2 px-4 py-2 bg-rose-50 border-2 border-zinc-800 hover:bg-rose-100 hover:shadow-custom transition duration-300'>
+                        <span className="text-md font-[VT323]">Live Site</span>
+                    </Link>
                 </div>
-
             </div>
         </article> 
     )
@@ -115,55 +111,36 @@ const Projects = () => {
                 <section className='lg:w-1/2 '>
                     <div className=' m-4 lg:m-0 '>
                         <FeaturedProjects 
-                            title="Blobodoro"
-                            img={project1img}
-                            summary="Productive studying with a cute pixel twist. Created using react native next.js, tailwind css and react router."
-                            link="https://www.blobodoro.com/"
-                            github="https://github.com/blobodoro"
-                            type="Featured Project"
+                            title="Market Bell"
+                            img={marketBellImg}
+                            summary="Worldwide market exchange open/close time tracker all in one app, with live notifications - never miss a trade opportunity. Stay in sync across time zones with real-time updates on your iPhone."
+                            link="https://magenta-stack-096828.framer.app/"
+                            type="In Production - iOS App"
                         />
                     </div>
                 </section>
-                    <div className='p-16 flex justify-center font-[VT323] tracking-wider text-3xl text-rose-300'> More Projects To Come... </div>
+
                 {/* Grid of projects */}
-                {/* <section className='xl:grid grid-cols-12 xl:w-1/2 justify-center xl:mt-10 lg:mx-[25%] lg:pl-6'>
-                    <div className='col-span-6 row-span-4 xl:ml-10 xl:my-5 m-4'>
-                            <Project 
-                                title="Blobodoro"
-                                img={project1img}
-                                link="https://www.blobodoro.com/"
-                                github="https://github.com/blobodoro"
-                                type="Featured Project"
-                            />
-                        </div>
-                        <div className='col-span-6 row-span-4 xl:ml-10 xl:my-5 m-4'>
-                            <Project 
-                                title="Blobodoro"
-                                img={project1img}
-                                link="https://www.blobodoro.com/"
-                                github="https://github.com/blobodoro"
-                                type="Featured Project"
-                            />
-                        </div>
-                        <div className='col-span-6 row-span-4 xl:ml-10 xl:my-5 m-4'>
-                            <Project 
-                                title="Blobodoro"
-                                img={project1img}
-                                link="https://www.blobodoro.com/"
-                                github="https://github.com/blobodoro"
-                                type="Featured Project"
-                            />
-                        </div>
-                        <div className='col-span-6 row-span-4 xl:ml-10 xl:my-5 m-4'>
-                            <Project 
-                                title="Blobodoro"
-                                img={project1img}
-                                link="https://www.blobodoro.com/"
-                                github="https://github.com/blobodoro"
-                                type="Featured Project"
-                            />
-                        </div>
-                </section> */}
+                <section className='w-full max-w-6xl px-4 mt-10 mb-10'>
+                    <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6'>
+                        <Project 
+                            title="Pokémon Go Search String Builder"
+                            summary="A web tool for generating complex Pokémon GO search filters. Creates advanced search queries to efficiently manage and filter through large Pokémon collections in-game."
+                            img={pokemongoSearchStringImg}
+                            link="https://www.pokestring.com/"
+                            type="Web App"
+                        />
+                        <Project 
+                            title="Personal Portfolio Website"
+                            summary="Responsive personal portfolio website showcasing projects and resume. Built with Next.js 14, TypeScript, and Tailwind CSS and deployed on Vercel."
+                            img={katmilnedotcom}
+                            link="https://katmilne.com/"
+                            type="Web App"
+                        />
+                        {/* Add more projects here */}
+                    </div>
+                </section>
+                
                         
 
                 

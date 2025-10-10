@@ -2,6 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
 @layer utilities {
   .shadow-custom {
     box-shadow: 0px 6px 6px rgba(213, 213, 213, 0.3), 0px 1px 3px rgba(107, 106, 106, 0.5);
