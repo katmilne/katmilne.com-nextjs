@@ -126,7 +126,7 @@ const Projects = () => {
                             title="Market Bell"
                             img={marketBellImg}
                             summary="Worldwide market exchange open/close time tracker all in one app, with live notifications - never miss a trade opportunity. Stay in sync across time zones with real-time updates on your iPhone."
-                            link="https://magenta-stack-096828.framer.app/"
+                            link="https://www.marketbell.app/"
                             detailsLink="/market-bell"
                             type="In Production - iOS App"
                         />
