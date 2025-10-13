@@ -12,10 +12,9 @@ class MyDocument extends Document {
             rel="stylesheet"
           />
           {/* Favicon */}
-          <link rel="icon" type="image/png" href="/img/poppy3.png" />
+          <link rel="icon" type="image/png" href="/img/poppy3.png" sizes="32x32" />
           <link rel="shortcut icon" type="image/png" href="/img/poppy3.png" />
           <link rel="apple-touch-icon" href="/img/poppy3.png" />
-          {/* Global styles are imported in _app.tsx, so this is not needed */}
         </Head>
         <body>
           <Main />

@@ -135,7 +135,7 @@ const MarketBell = () => {
                             Get notified on progress and be the first to try/beta test Market Bell
                         </p>
                         <Link 
-                            href="https://magenta-stack-096828.framer.app/" 
+                            href="https://www.marketbell.app/" 
                             target="_blank"
                             className='inline-flex items-center gap-2 px-8 py-4 bg-white border-4 border-zinc-800 rounded-lg hover:bg-gray-50 hover:shadow-custom transition duration-300 text-xl font-[VT323]'
                         >
