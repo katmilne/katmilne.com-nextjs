@@ -29,7 +29,7 @@ const FeaturedProjects: React.FC<FeaturedProjectsProps> = ({
     return (
         <article className='w-full lg:flex lg:items-center lg:justify-between shadow-custom lg:shadow-none lg:relative border-4 border-zinc-800 bg-white rounded-3xl  lg:p-5 lg:m-5 mt-6'>
             <div className='lg:absolute top-1 -right-6 -z-10 w-[102%] h-[103%] rounded-[2rem] bg-zinc-800'/>
-            <Link href={detailsLink || link} className='w-1/2 cursor-pointer'>
+            <Link href={link} target="_blank" className='w-1/2 cursor-pointer'>
                 <Image src={img} alt={title} className="lg:w-full lg:h-auto "/>
             </Link>
             
