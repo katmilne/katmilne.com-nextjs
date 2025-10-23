@@ -137,12 +137,13 @@ const Projects = () => {
                 <section className='w-full max-w-6xl px-4 mt-10 mb-10'>
                     <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6'>
                         <Project 
-                            title="Swapparel"
-                            summary="Full-stack sustainable fashion platform enabling clothing swaps. University group project covering conceptualization, market research, UX/UI design in Figma, development, and CI/CD deployment."
-                            img={swapparelImg}
-                            link="https://www.figma.com/design/o1ea986MMq4DvGzcQa2MKW/swapparel-website"
-                            type="University Group Project"
-                            buttonText="Figma Design"
+                            title="Blobodoro"
+                            summary="iOS pomodoro timer app with collectable fish companions. Built with React Native and launching soon on the iOS App Store. Features customizable timers, focus sessions, and motivational fish collection to gamify productivity."
+                            img={blobodoroImg}
+                            link="https://www.blobodoro.com/"
+                            type="iOS App - Launching Soon"
+                            detailsLink="/blobodoro"
+                            buttonText="Visit Website"
                         />
                         <Project 
                             title="Pokémon Go Search String Builder"
@@ -151,15 +152,16 @@ const Projects = () => {
                             link="https://pokemon-search-string.vercel.app/"
                             type="Web App"
                         />
+                        
                         <Project 
-                            title="Blobodoro"
-                            summary="iOS pomodoro timer app with collectable fish companions. Built with React Native and launching soon on the iOS App Store. Features customizable timers, focus sessions, and motivational fish collection to gamify productivity."
-                            img={blobodoroImg}
-                            link="https://blobodoro-website.vercel.app/"
-                            type="iOS App - Launching Soon"
-                            detailsLink="/blobodoro"
-                            buttonText="Visit Website"
+                            title="Swapparel"
+                            summary="Full-stack sustainable fashion platform enabling clothing swaps. University group project covering conceptualization, market research, UX/UI design in Figma, development, and CI/CD deployment."
+                            img={swapparelImg}
+                            link="https://www.figma.com/design/o1ea986MMq4DvGzcQa2MKW/swapparel-website"
+                            type="University Group Project"
+                            buttonText="Figma Design"
                         />
+                        
                         <Project 
                             title="Personal Portfolio Website"
                             summary="Responsive personal portfolio website showcasing projects and resume. Built with Next.js 14, TypeScript, and Tailwind CSS and deployed on Vercel."
