@@ -8,6 +8,7 @@ import blobLandingPage from '../../public/img/blob-landing-page.png';
 import blobHighFidelity from '../../public/img/blob-high-fidelity.png';
 import blobHighFidelityComponents from '../../public/img/blob-high-fidelity-components.png';
 import blobHighFidelityComponents2 from '../../public/img/blob-high-fidelity-components2.png';
+import blobFinalDesign from '../../public/img/final-design.png';
 
 const Blobodoro = () => {
     return (
@@ -23,11 +24,24 @@ const Blobodoro = () => {
                         Blobodoro
                     </h1>
                     <p className='text-xl text-gray-600 mb-3'>
-                        Design Project - Pomodoro Timer App
+                        iOS App - Launching Soon
                     </p>
-                    <div className='flex items-center gap-2 text-sm text-gray-600'>
-                        <span className='font-semibold'>Designer:</span>
+                    <div className='flex items-center gap-2 text-sm text-gray-600 mb-6'>
+                        <span className='font-semibold'>Developer:</span>
                         <span>Kat Milne</span>
+                    </div>
+                    
+                    {/* Join Waitlist CTA */}
+                    <div className='border-4 border-zinc-800 rounded-2xl p-6 bg-rose-50 shadow-custom'>
+                        <h3 className='text-2xl font-bold font-[VT323] mb-2'>Join the Waitlist</h3>
+                        <p className='text-gray-700 mb-4'>Get notified when Blobodoro launches on the iOS App Store and be among the first to collect your fish companions!</p>
+                        <Link 
+                            href="https://blobodoro-website.vercel.app/" 
+                            target="_blank"
+                            className='inline-flex items-center gap-2 px-6 py-3 bg-white border-2 border-zinc-800 rounded-lg hover:bg-gray-50 hover:shadow-custom transition duration-300 text-lg font-[VT323]'
+                        >
+                            Join Waitlist →
+                        </Link>
                     </div>
                 </div>
 
@@ -44,10 +58,10 @@ const Blobodoro = () => {
                 <section className='w-full max-w-4xl mb-12'>
                     <h2 className='text-3xl font-bold font-[VT323] mb-4'>Project Overview</h2>
                     <p className='text-lg mb-4'>
-                        Blobodoro is a Pomodoro timer app concept that combines productivity with gamification. Users can focus on their work while collecting adorable fish companions that motivate and reward their dedication.
+                        Blobodoro is a Pomodoro timer iOS app built with React Native that combines productivity with gamification. Users can focus on their work while collecting adorable fish companions that motivate and reward their dedication.
                     </p>
                     <p className='text-lg'>
-                        The app features customizable focus timers, break reminders, and a collection system that makes time management fun and engaging.
+                        The app features customizable focus timers, break reminders, and a collection system that makes time management fun and engaging. Launching soon on the iOS App Store.
                     </p>
                 </section>
 
@@ -91,6 +105,15 @@ const Blobodoro = () => {
                 {/* Design Showcase */}
                 <section className='w-full max-w-4xl mb-12'>
                     <h2 className='text-3xl font-bold font-[VT323] mb-4'>Design Process</h2>
+                    <div className='bg-rose-50 border-2 border-zinc-800 rounded-lg p-4 mb-6'>
+                        <p className='text-gray-700'>
+                            <span className='font-bold'>Note:</span> These are early design explorations from the initial concept phase. For the finished design and current app experience, visit the{' '}
+                            <Link href="https://blobodoro-website.vercel.app/" target="_blank" className='text-rose-500 hover:underline font-semibold'>
+                                Blobodoro website
+                            </Link>
+                            .
+                        </p>
+                    </div>
                     <p className='text-gray-600 mb-8'>From wireframes to high-fidelity mockups</p>
                     
                     {/* Low Fidelity - Wireframes */}
@@ -143,9 +166,22 @@ const Blobodoro = () => {
                         <p className='text-sm text-gray-700'>Complete app screens with final colors, typography, and visual design</p>
                     </div>
 
+                    {/* Final Design */}
+                    <div className='mb-10'>
+                        <h3 className='font-bold text-2xl mb-4 font-[VT323]'>🎯 Final Design</h3>
+                        <div className='border-4 border-zinc-800 rounded-3xl overflow-hidden bg-white shadow-custom mb-3'>
+                            <Image 
+                                src={blobFinalDesign} 
+                                alt="Blobodoro Final App Design" 
+                                className="w-full h-auto"
+                            />
+                        </div>
+                        <p className='text-sm text-gray-700'>The final app design as it appears in the iOS app, featuring study stats, timer with fish companions, and the fish shop</p>
+                    </div>
+
                     {/* Landing Page Design */}
                     <div className='mb-10'>
-                        <h3 className='font-bold text-2xl mb-4 font-[VT323]'>🌐 Landing Page Design</h3>
+                        <h3 className='font-bold text-2xl mb-4 font-[VT323]'>Landing Page Design</h3>
                         <div className='border-4 border-zinc-800 rounded-3xl overflow-hidden bg-white shadow-custom mb-3'>
                             <Image 
                                 src={blobLandingPage} 
@@ -153,7 +189,11 @@ const Blobodoro = () => {
                                 className="w-full h-auto"
                             />
                         </div>
-                        <p className='text-sm text-gray-700'>Marketing landing page design showcasing the app's features and aesthetic</p>
+                        <p className='text-sm text-gray-700'>Initial landing page design concept. The final design was an iteration on this and can be viewed on the{' '}
+                            <Link href="https://blobodoro-website.vercel.app/" target="_blank" className='text-rose-500 hover:underline font-semibold'>
+                                Blobodoro website
+                            </Link>
+                        </p>
                     </div>
                 </section>
 
@@ -183,16 +223,16 @@ const Blobodoro = () => {
                 {/* Call to Action */}
                 <section className='w-full max-w-4xl mb-20'>
                     <div className='border-4 border-zinc-800 rounded-3xl p-8 bg-rose-50 shadow-custom text-center'>
-                        <h2 className='text-3xl font-bold font-[VT323] mb-4'>Design Project</h2>
+                        <h2 className='text-3xl font-bold font-[VT323] mb-4'>Launching Soon on iOS</h2>
                         <p className='text-lg mb-6'>
-                            This is a conceptual design project created in Figma, exploring gamification in productivity apps.
+                            Built with React Native, Blobodoro is coming to the iOS App Store soon. Visit the website to learn more and stay updated on the launch.
                         </p>
                         <Link 
-                            href="https://next-blobodoro-1zvbraj8f-katmilnes-projects.vercel.app/" 
+                            href="https://blobodoro-website.vercel.app/" 
                             target="_blank"
                             className='inline-flex items-center gap-2 px-8 py-4 bg-white border-4 border-zinc-800 rounded-lg hover:bg-gray-50 hover:shadow-custom transition duration-300 text-xl font-[VT323]'
                         >
-                            Visit Site →
+                            Visit Website →
                         </Link>
                     </div>
                 </section>

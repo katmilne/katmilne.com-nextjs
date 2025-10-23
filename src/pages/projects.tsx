@@ -7,7 +7,7 @@ import katmilnedotcom from '../../public/img/katmilne-website.png'
 import pokemongoSearchStringImg from '../../public/img/pokemongo-searchstring.png'
 import marketBellImg from '../../public/img/market-bell.png'
 import swapparelImg from '../../public/img/swapparel.png'
-import blobodoroImg from '../../public/img/blobodoro.com.png'
+import blobodoroImg from '../../public/img/blobo-website.png'
 
 interface FeaturedProjectsProps {
     type: string;
@@ -148,16 +148,17 @@ const Projects = () => {
                             title="Pokémon Go Search String Builder"
                             summary="A web tool for generating complex Pokémon GO search filters. Creates advanced search queries to efficiently manage and filter through large Pokémon collections in-game."
                             img={pokemongoSearchStringImg}
-                            link="https://www.pokestring.com/"
+                            link="https://pokemon-search-string.vercel.app/"
                             type="Web App"
                         />
                         <Project 
                             title="Blobodoro"
-                            summary="Pomodoro timer app with collectable fish. Designed complete UI/UX experience in Figma, featuring customizable timers, focus sessions, and motivational fish collection."
+                            summary="iOS pomodoro timer app with collectable fish companions. Built with React Native and launching soon on the iOS App Store. Features customizable timers, focus sessions, and motivational fish collection to gamify productivity."
                             img={blobodoroImg}
-                            link="https://next-blobodoro-1zvbraj8f-katmilnes-projects.vercel.app/"
-                            type="Design Project"
+                            link="https://blobodoro-website.vercel.app/"
+                            type="iOS App - Launching Soon"
                             detailsLink="/blobodoro"
+                            buttonText="Visit Website"
                         />
                         <Project 
                             title="Personal Portfolio Website"
